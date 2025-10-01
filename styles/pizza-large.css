@@ -1,0 +1,17 @@
+@media screen and (min-width: 500px) {
+    body {
+        max-width: 980px;
+    }
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .color-table {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .color-row {
+        flex: 1 1 calc(50% - 20px);
+        max-width: calc(50% - 20px);        
+    }
+}

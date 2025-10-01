@@ -1,0 +1,132 @@
+:root {
+    --secondary-color-green: #3f523b;
+    --accent1-color-beige: #f2dcbe;
+    --accent2-color-red: #9e451a;
+}
+/* Global Styles */
+* {
+	box-sizing: border-box;
+}
+body {
+    font-family: 'PT Serif', serif;
+    font-weight: 400;
+    margin: 0 auto;
+    padding: .2rem;
+    color: var(--secondary-color-green);
+}
+header, section h2, section h3, footer {
+    text-align: center;
+}
+.color-box.accent1-color{
+    background-color: var(--accent1-color-beige);
+}
+.color-box.primary-color, section {
+    background-color: var(--primary-color);
+}
+.color-row, .color-box {
+    border-radius: 5px; 
+    border: 1px solid var(--secondary-color-green); 
+}
+/* Header */
+header h1 {
+    text-transform: uppercase;
+}
+header p {
+    font-style: italic;
+}
+/* Section */
+section {
+  padding: 0.5rem;
+  margin: 1rem;
+  border: 2px solid var(--secondary-color-green);
+  background-color: #ffffff;
+}
+section h2 {
+    color: var(--secondary-color-green);
+}
+/* Color Table */
+.color-table {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  gap: 10px;
+  justify-content: center;
+}
+
+.color-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Color Box Base */
+.color-box {
+  height: 30px;
+  width: 30px;
+  border-radius: 4px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Animation */
+.color-box:hover {
+  transform: scale(1.2);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Specific Colors */
+.color-box.secondary-color {
+  background-color: var(--secondary-color-green);
+}
+
+.color-box.accent2-color {
+  background-color: var(--accent2-color-red);
+}
+
+/* Wireframe Image */
+
+.proposal-container {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.proposal-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: var(--secondary-color-green);
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.proposal-button:hover {
+  background-color: var(--accent2-color-red);
+}
+.shadow-image {
+  display: block;
+  width: 100%;
+  max-width: 400px; /* Limita el tamaño máximo */
+  height: auto;
+  margin: 1rem auto; /* Centrado con espacio */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  border-radius: 4px; /* Esquinas redondeadas */
+}
+.logo {
+  display: block;
+  margin: 1rem auto;
+  max-width: 200px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
